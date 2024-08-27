@@ -5,10 +5,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #D6EFD8;
+    background-color: white;
     padding-top: 20px;
 }
-
+a{
+    color: #115061ce;
+    text-decoration: none;
+}
 .side-navbar ul {
     list-style-type: none;
     padding: 0;

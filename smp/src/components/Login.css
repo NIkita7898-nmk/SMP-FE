@@ -1,57 +1,75 @@
 /* src/App.css */
 
 .form-class {
-    height: 45%;
-    width: 170%;
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 5%;
-    padding: 10%;
-    border-radius: 5%;
-    background-color: #ffffff;
-    color:#115061ce;
-  }
-  
-  .form-group {
-    text-align: left;
+  height: 290px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 5%;
+  padding: 10%;
+  border-radius: 5%;
+  background-color: #ffffff;
+  color: #115061ce;
+  position: relative;
+}
 
-    margin-bottom: 15px;
-    margin-top: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 8px;
-    border: none;
-    border-bottom: 1px solid #D6EFD8;
-    border-radius: 0;
-    box-shadow: none;
-    outline: none;
-    background-color: transparent;
-  }
-  
-  .form-group input:focus {
-    border-bottom: 1px solid black;
-  }
-  
-  button {
-    background-color: #115061ce;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #115061ce;
-  }
-  
+.form-group {
+  text-align: left;
+
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #d6efd8;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.form-group input:focus {
+  border-bottom: 1px solid black;
+}
+
+button {
+  background-color: #115061ce;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #115061ce;
+}
+
+.error-message {
+  bottom: -20px; /* Position error message below the form */
+  left: 10px; /* Adjust as necessary */
+  max-height: 20px;
+  max-width: 300px;
+  /* Adjust this value based on your design */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: red; /* Optional: Style the error text */
+  margin-top: 10px;
+  font-size: small;
+  visibility: hidden; /* Hide error message by default */
+}
+.error-message.show {
+  visibility: visible; /* Show error message when there's an error */
+}
