@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import axios from "axios";
-
+import { API_BASE_URL } from "../constants/constant";
 export default function Login() {
   const [email, setEmail] = useState(""); // State for email input
   const [password, setPassword] = useState(""); // State for password input
@@ -17,7 +17,7 @@ export default function Login() {
       return;
     }
     axios
-      .post("http://localhost:8000/login/", {
+      .post(`${API_BASE_URL}login/`, {
         email: email,
         password: password,
       })
